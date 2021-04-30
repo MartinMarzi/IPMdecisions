@@ -1,3 +1,6 @@
 jupyterlab
 pandas
-scikt-learn
+sklearn
+numpy
+matplotlib.pyplot
+seaborn
