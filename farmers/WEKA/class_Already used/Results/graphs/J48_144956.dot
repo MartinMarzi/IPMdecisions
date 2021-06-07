@@ -1,0 +1,12 @@
+digraph J48Tree {
+N0 [label="Country" ]
+N0->N1 [label="= Italy"]
+N1 [label="Manufacturer_demo_of_DSS_Cat" ]
+N1->N2 [label="= 1"]
+N2 [label="0 (19.54/4.54)" shape=box style=filled ]
+N1->N3 [label="!= 1"]
+N3 [label="1 (16.46/4.0)" shape=box style=filled ]
+N0->N4 [label="!= Italy"]
+N4 [label="1 (98.0/17.0)" shape=box style=filled ]
+}
+
