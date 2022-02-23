@@ -1,0 +1,54 @@
+=== Run information ===
+
+Evaluator:    weka.attributeSelection.InfoGainAttributeEval 
+Search:       weka.attributeSelection.Ranker -T -1.7976931348623157E308 -N -1
+Relation:     Farmers_edited_data19042021-weka.filters.unsupervised.attribute.Reorder-Rfirst-24,26-last,25-weka.filters.unsupervised.attribute.Remove-R21,25-26,66,71-72,75-78-weka.filters.unsupervised.attribute.Remove-R15,29-30,32-33,35-36,38-39,41-42,44-45,47-48,50-51,53-54,56-57,59-60,63-65-weka.filters.supervised.attribute.AttributeSelection-Eweka.attributeSelection.CorrelationAttributeEval-Sweka.attributeSelection.Ranker -T -1.7976931348623157E308 -N -1
+Instances:    149
+Attributes:   45
+              Farm_type_Organic
+              Manufacturer_demo_of_DSS_Cat
+              ProductionUse_selling
+              Prefered_access_Advisor
+              Willing_to_try_new_products_Cat
+              Farm_type_Conventional
+              Country
+              Prefered_type_Web_Software_Both_Cat_NO
+              Trust_in_DSS_1to3
+              WTP_for_DSS_Cat
+              Gender_1male
+              Farm_type_Biodynamic
+              Region
+              DSS_for_ShortLongTermBothDecision_Cat_NO
+              Appreciate_change_1to3
+              Enjoy_using_new_techs_1to3
+              Prefered_access_Phone
+              Speed_internet_Cat
+              Prefered_access_PC
+              Crop_Group_Cat
+              Age_Cat
+              Years_own_phone
+              Income_Cat
+              Subject
+              Computer_at_home
+              Marketing_info_about_DSS_Cat
+              Importance_of_easy_to_use_1to3
+              Farm_size_Cat
+              Agricultural_app_use_Cat
+              Output_preference_Cat_NO
+              Need_IT_teaching_Cat
+              Trust_in_colleague_advice_1to3
+              DSS_must_be_tailored_for_your_farm_Cat
+              Degree_Cat
+              Importance_low_price_1to3
+              Importance_of_efficient_1to3
+              Legislative_requirements
+              Trust_advice_friend_1to3
+              Production_level_1to3
+              Proportion_of_income
+              Price_important_factor
+              Importance_polyvalence_1to3
+              Own_phone
+              Farm_type_Intergrated
+              Already_used_DSS
+Evaluation mode:    evaluate on all training data
+

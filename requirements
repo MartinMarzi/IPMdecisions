@@ -2,5 +2,9 @@ jupyterlab
 pandas
 sklearn
 numpy
-matplotlib.pyplot
+matplotlib
 seaborn
+umap-learn
+hdbscan
+plotly
+openpyxl

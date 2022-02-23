@@ -1,0 +1,20 @@
+digraph J48Tree {
+N0 [label="Manufacturer_demo_of_DSS_Cat" ]
+N0->N1 [label="= 1"]
+N1 [label="Crop_Orchards" ]
+N1->N2 [label="= 0"]
+N2 [label="Region" ]
+N2->N3 [label="= south_EU"]
+N3 [label="0 (17.4/4.4)" shape=box style=filled ]
+N2->N4 [label="= central_EU"]
+N4 [label="1 (14.2/2.8)" shape=box style=filled ]
+N2->N5 [label="= north_EU"]
+N5 [label="1 (14.0/2.0)" shape=box style=filled ]
+N1->N6 [label="= 1"]
+N6 [label="0 (5.0)" shape=box style=filled ]
+N0->N7 [label="= 2"]
+N7 [label="1 (68.16/12.08)" shape=box style=filled ]
+N0->N8 [label="= 3"]
+N8 [label="1 (7.23/1.11)" shape=box style=filled ]
+}
+

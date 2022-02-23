@@ -1,0 +1,305 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2513
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 AndaleMono;}
+{\colortbl;\red255\green255\blue255;\red47\green255\blue18;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c15686\c99608\c7843;\csgray\c0\c90000;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww15000\viewh16980\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs28 \cf2 \cb3 \CocoaLigature0 C5.0 [Release 2.07 GPL Edition]  	Mon Jun  7 12:00:51 2021\
+-------------------------------\
+\
+    Options:\
+	Application `IPM_farmers_All_Q1'\
+\
+Class specified by attribute `Already_used_DSS'\
+*** ignoring cases with bad or unknown class\
+\
+Read 134 cases (57 attributes) from IPM_farmers_All_Q1.data\
+\
+Attributes excluded:\
+    How_do_you_access_DSS_Cat\
+    Potencial_user_of_platform\
+\
+Decision tree:\
+\
+DSS_can_improve_your_productivity_Cat = 1: 0 (3/1)\
+DSS_can_improve_your_productivity_Cat = 4: 1 (41/5)\
+DSS_can_improve_your_productivity_Cat = 2:\
+:...Legislative_requirements = 0: 1 (4.7/0.4)\
+:   Legislative_requirements = 1: 0 (8.3/1.6)\
+DSS_can_improve_your_productivity_Cat = 3:\
+:...DSS_are_more_suited_for_LongTermDecision_2 = 0: 1 (43.6/5)\
+    DSS_are_more_suited_for_LongTermDecision_2 = 1:\
+    :...Manufacturer_demo_of_DSS_Cat = 3: 1 (3.1/1.1)\
+        Manufacturer_demo_of_DSS_Cat = 1:\
+        :...Age_of_DSS_user_at_the_farm_2 = 0: 0 (9.7)\
+        :   Age_of_DSS_user_at_the_farm_2 = 1: 1 (2.6/0.6)\
+        Manufacturer_demo_of_DSS_Cat = 2:\
+        :...Speed_internet_Cat in \{1,2\}: 1 (7)\
+            Speed_internet_Cat = 3:\
+            :...Age_of_DSS_user_at_the_farm_3 = 0: 1 (6.9/1.9)\
+                Age_of_DSS_user_at_the_farm_3 = 1: 0 (4.1/0.4)\
+\
+\
+Evaluation on training data (134 cases):\
+\
+	    Decision Tree   \
+	  ----------------  \
+	  Size      Errors  \
+\
+	    11   14(10.4%)   <<\
+\
+\
+	   (a)   (b)    <-classified as\
+	  ----  ----\
+	    25    11    (a): class 0\
+	     3    95    (b): class 1\
+\
+\
+	Attribute usage:\
+\
+	    100%  DSS_can_improve_your_productivity_Cat\
+	     57%  DSS_are_more_suited_for_LongTermDecision_2\
+	     25%  Manufacturer_demo_of_DSS_Cat\
+	     14%  Speed_internet_Cat\
+	      8%  Legislative_requirements\
+	      7%  Age_of_DSS_user_at_the_farm_2\
+	      7%  Age_of_DSS_user_at_the_farm_3\
+\
+\
+\
+\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\
+C5.0 [Release 2.07 GPL Edition]  	Mon Jun  7 12:02:27 2021\
+-------------------------------\
+\
+    Options:\
+	Application `IPM_farmers_All_Q1'\
+	Cross-validate using 5 folds\
+\
+Class specified by attribute `Already_used_DSS'\
+*** ignoring cases with bad or unknown class\
+\
+Read 134 cases (57 attributes) from IPM_farmers_All_Q1.data\
+\
+Attributes excluded:\
+    How_do_you_access_DSS_Cat\
+    Potencial_user_of_platform\
+\
+\
+[ Fold 1 ]\
+\
+Decision tree:\
+\
+Farm_type_Organic = 0: 1 (93.1/20)\
+Farm_type_Organic = 1: 0 (14.9/5.9)\
+\
+Evaluation on hold-out data (26 cases):\
+\
+	    Decision Tree   \
+	  ----------------  \
+	  Size      Errors  \
+\
+	     2    9(34.6%)   <<\
+\
+\
+[ Fold 2 ]\
+\
+Decision tree:\
+\
+Manufacturer_demo_of_DSS_Cat in \{2,3\}: 1 (62.8/8.2)\
+Manufacturer_demo_of_DSS_Cat = 1:\
+:...Marketing_info_about_DSS_Cat = 3: 1 (0)\
+    Marketing_info_about_DSS_Cat = 2: 1 (19.3/4.4)\
+    Marketing_info_about_DSS_Cat = 1:\
+    :...Region in \{central_EU,north_EU\}: 1 (14.2/4.6)\
+        Region = south_EU: 0 (10.8)\
+\
+Evaluation on hold-out data (27 cases):\
+\
+	    Decision Tree   \
+	  ----------------  \
+	  Size      Errors  \
+\
+	     4    6(22.2%)   <<\
+\
+\
+[ Fold 3 ]\
+\
+Decision tree:\
+\
+Farm_type_Organic = 0: 1 (93/20)\
+Farm_type_Organic = 1: 0 (14/5)\
+\
+Evaluation on hold-out data (27 cases):\
+\
+	    Decision Tree   \
+	  ----------------  \
+	  Size      Errors  \
+\
+	     2   10(37.0%)   <<\
+\
+\
+[ Fold 4 ]\
+\
+Decision tree:\
+\
+Gender_1male = 0:\
+:...Manufacturer_demo_of_DSS_Cat = 3: 1 (0)\
+:   Manufacturer_demo_of_DSS_Cat = 1: 0 (12.5/3)\
+:   Manufacturer_demo_of_DSS_Cat = 2: 1 (12.5/1.5)\
+Gender_1male = 1:\
+:...Trust_in_DSS_1to3 = 2: 1 (44/4)\
+    Trust_in_DSS_1to3 = 3: 0 (4/2)\
+    Trust_in_DSS_1to3 = 1:\
+    :...Appreciate_change_1to3 in \{1,2\}: 1 (30/8)\
+        Appreciate_change_1to3 = 3: 0 (4)\
+\
+Evaluation on hold-out data (27 cases):\
+\
+	    Decision Tree   \
+	  ----------------  \
+	  Size      Errors  \
+\
+	     6    7(25.9%)   <<\
+\
+\
+[ Fold 5 ]\
+\
+Decision tree:\
+\
+DSS_can_improve_your_productivity_Cat in \{1,2\}: 0 (12/5)\
+DSS_can_improve_your_productivity_Cat = 4: 1 (33/3)\
+DSS_can_improve_your_productivity_Cat = 3:\
+:...DSS_are_more_suited_for_LongTermDecision_2 = 0: 1 (32.5/3)\
+    DSS_are_more_suited_for_LongTermDecision_2 = 1:\
+    :...Appreciate_change_1to3 = 3: 0 (4)\
+        Appreciate_change_1to3 = 1:\
+        :...Prefered_type_Web_1 = 0: 0 (3)\
+        :   Prefered_type_Web_1 = 1: 1 (2.5)\
+        Appreciate_change_1to3 = 2:\
+        :...Age_Cat in \{1,5\}: 0 (7/1)\
+            Age_Cat in \{2,3,4\}: 1 (13/3)\
+\
+Evaluation on hold-out data (27 cases):\
+\
+	    Decision Tree   \
+	  ----------------  \
+	  Size      Errors  \
+\
+	     8    8(29.6%)   <<\
+\
+\
+[ Summary ]\
+\
+Fold	    Decision Tree   \
+----	  ----------------  \
+	  Size      Errors  \
+\
+   1	     2       34.6%\
+   2	     4       22.2%\
+   3	     2       37.0%\
+   4	     6       25.9%\
+   5	     8       29.6%\
+\
+  Mean	   4.4       29.9%\
+  SE	   1.2        2.7%\
+\
+\
+	   (a)   (b)    <-classified as\
+	  ----  ----\
+	     6    30    (a): class 0\
+	    10    88    (b): class 1\
+\
+\
+\
+\'97\'97\'97\'97\'97\'97rules\'97\'97\'97\
+(base) mmarzi@MacBook-Pro IPM_farmers_All_Q1 % c5.0 -f IPM_farmers_All_Q1 -r\
+\
+C5.0 [Release 2.07 GPL Edition]  	Mon Jun  7 14:40:57 2021\
+-------------------------------\
+\
+    Options:\
+	Application `IPM_farmers_All_Q1'\
+	Rule-based classifiers\
+\
+Class specified by attribute `Already_used_DSS'\
+*** ignoring cases with bad or unknown class\
+\
+Read 134 cases (57 attributes) from IPM_farmers_All_Q1.data\
+\
+Attributes excluded:\
+    How_do_you_access_DSS_Cat\
+    Potencial_user_of_platform\
+\
+Rules:\
+\
+Rule 1: (7/1, lift 2.9)\
+	DSS_can_improve_your_productivity_Cat = 2\
+	Legislative_requirements = 1\
+	->  class 0  [0.778]\
+\
+Rule 2: (13/6, lift 2.0)\
+	DSS_can_improve_your_productivity_Cat = 2\
+	->  class 0  [0.533]\
+\
+Rule 3: (33/16, lift 1.9)\
+	DSS_are_more_suited_for_LongTermDecision_2 = 1\
+	DSS_can_improve_your_productivity_Cat = 3\
+	->  class 0  [0.514]\
+\
+Rule 4: (12, lift 1.3)\
+	DSS_are_more_suited_for_LongTermDecision_2 = 1\
+	Manufacturer_demo_of_DSS_Cat = 2\
+	Speed_internet_Cat = 2\
+	->  class 1  [0.929]\
+\
+Rule 5: (21/2, lift 1.2)\
+	Age_of_DSS_user_at_the_farm_2 = 1\
+	DSS_are_more_suited_for_LongTermDecision_2 = 1\
+	->  class 1  [0.870]\
+\
+Rule 6: (43/5, lift 1.2)\
+	DSS_are_more_suited_for_LongTermDecision_2 = 0\
+	DSS_can_improve_your_productivity_Cat = 3\
+	->  class 1  [0.867]\
+\
+Rule 7: (41/5, lift 1.2)\
+	DSS_can_improve_your_productivity_Cat = 4\
+	->  class 1  [0.860]\
+\
+Rule 8: (32/4, lift 1.2)\
+	Age_of_DSS_user_at_the_farm_3 = 0\
+	Manufacturer_demo_of_DSS_Cat = 2\
+	->  class 1  [0.853]\
+\
+Default class: 1\
+\
+\
+Evaluation on training data (134 cases):\
+\
+	        Rules     \
+	  ----------------\
+	    No      Errors\
+\
+	     8   18(13.4%)   <<\
+\
+\
+	   (a)   (b)    <-classified as\
+	  ----  ----\
+	    23    13    (a): class 0\
+	     5    93    (b): class 1\
+\
+\
+	Attribute usage:\
+\
+	     97%  DSS_can_improve_your_productivity_Cat\
+	     69%  DSS_are_more_suited_for_LongTermDecision_2\
+	     28%  Manufacturer_demo_of_DSS_Cat\
+	     24%  Age_of_DSS_user_at_the_farm_3\
+	     16%  Age_of_DSS_user_at_the_farm_2\
+	      9%  Speed_internet_Cat\
+	      5%  Legislative_requirements\
+\
+}
